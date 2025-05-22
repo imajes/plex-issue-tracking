@@ -20,6 +20,12 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: plex_forum_link
+    attributes:
+      label: Is there a link to a forum post that this comes from?
+      placeholder: Enter the full link starting with https://forums.plex.tv...
+
   - type: dropdown
     id: platform
     attributes:
@@ -94,16 +100,22 @@ body:
     id: plex_versions
     attributes:
       label: Plex version(s)
-      placeholder: e.g. Player 4.84.2, Server 1.40.1.8227
+      placeholder: e.g. Player 4.84.2, Server 1.40.1.8227. Don't forget to include the build number!
 
   - type: dropdown
     id: hardware_acceleration
     attributes:
-      label: Are you using hardware acceleration?
+      label: Are you using hardware encoding?
       options:
         - "Yes"
         - "No"
         - Not sure
+
+  - type: textarea
+    id: mediainfo
+    attributes:
+      label: If this relates to a specific piece of media, describe it here and attach a sample if possible.
+      description: Output from `mediainfo`, `mkvinfo` and/or plex's media data xml.
 
   - type: textarea
     id: extras

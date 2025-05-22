@@ -13,6 +13,12 @@ body:
         If Plex does pick up on these ideas, it’ll be because of thoughtful input like yours. Let’s raise the bar, together.
 
   - type: input
+    id: plex_forum_link
+    attributes:
+      label: Is there a link to a forum post that this comes from?
+      placeholder: Enter the full link starting with https://forums.plex.tv...
+
+  - type: input
     id: feature_summary
     attributes:
       label: What’s your idea in one line?
