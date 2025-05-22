@@ -1,7 +1,7 @@
-name: Bug Report
+name: 🪲 Bug Report
 description: Help improve Plex by reporting issues clearly and cleanly
 title: "[Bug]: "
-labels: ["bug"]
+labels: [bug]
 body:
   - type: markdown
     attributes:
