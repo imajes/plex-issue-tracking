@@ -1,0 +1,112 @@
+name: Bug Report
+description: Help improve Plex by reporting issues clearly and cleanly
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+
+        This issue tracker is run by members of the **Plex user community**, not the official Plex team. Our goal is to bring more **signal and less noise** to common bugs during the rebuild and public beta period.
+
+        By submitting your report here, you're helping all of us—and giving Plex better visibility into real, actionable problems.
+
+  - type: input
+    id: summary
+    attributes:
+      label: What’s the issue in a sentence?
+      placeholder: Short summary of the bug (e.g. "Playback stutters on Apple TV")
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: What device or platform are you using?
+      options:
+        - Windows (Desktop app)
+        - macOS (Desktop app)
+        - Android phone/tablet
+        - iPhone/iPad (iOS)
+        - Apple TV
+        - Roku
+        - Web browser
+        - Smart TV (specify below)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: platform_details
+    attributes:
+      label: If you chose “Other” or “Smart TV”, tell us more
+      placeholder: e.g. Samsung Q90T, Chromecast, etc.
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does the bug happen?
+      options:
+        - Every time
+        - Often (more than half the time)
+        - Sometimes (intermittent)
+        - Rarely
+        - Only happened once
+        - Not sure
+
+  - type: dropdown
+    id: media_type
+    attributes:
+      label: What kind of media were you using?
+      options:
+        - Movie
+        - TV show
+        - Music
+        - Photo
+        - Live TV / DVR
+        - None (UI/Navigation issue)
+        - Not sure
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do right before the issue?
+      placeholder: |
+        1. Opened the app
+        2. Clicked on a TV show
+        3. Pressed Play
+        4. Screen went black
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: And what actually happened?
+
+  - type: input
+    id: plex_versions
+    attributes:
+      label: Plex version(s)
+      placeholder: e.g. Player 4.84.2, Server 1.40.1.8227
+
+  - type: dropdown
+    id: hardware_acceleration
+    attributes:
+      label: Are you using hardware acceleration?
+      options:
+        - Yes
+        - No
+        - Not sure
+
+  - type: textarea
+    id: extras
+    attributes:
+      label: Anything else we should know?
+      description: Logs, screenshots, or observations can go here. Paste a link or describe it.
