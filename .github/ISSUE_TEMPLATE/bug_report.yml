@@ -101,8 +101,8 @@ body:
     attributes:
       label: Are you using hardware acceleration?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Not sure
 
   - type: textarea
