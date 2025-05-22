@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Plex Discussion Forums
+    url: https://forums.plex.tv
+    about: Please ask and answer questions here.
+  - name: Track Overview of Issues
+    url: https://github.com/imajes/plex-issue-tracking/projects?query=is:open
+    about: This is where you can find a top level view of the issues in progress.
